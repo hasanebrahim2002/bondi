@@ -1,0 +1,185 @@
+:root {
+  --dark-color: #19283f;
+  --green-color: #33d1cc;
+  --red-color: #ff3150;
+  --yellow-color: #ffc400;
+  --section-color: #eff7fa;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+.navbar {
+  background-color: var(--dark-color) !important;
+}
+
+.collapse .navbar-nav li a {
+  color: white !important;
+  transition: 0.4s;
+}
+.collapse .navbar-nav li a:hover {
+  color: var(--green-color) !important;
+}
+.collapse .search svg {
+  color: var(--green-color);
+}
+
+.collapse .search {
+  border-left: 1px solid var(--green-color);
+}
+
+.btn-main {
+  background-color: var(--red-color) !important;
+  color: var(--yellow-color) !important;
+}
+.navbar-toggler {
+  border: 1px solid white !important;
+  box-shadow: none;
+}
+.navbar-toggler[aria-expanded="true"] {
+  border: 1px solid var(--green-color) !important;
+}
+
+.landing {
+  min-height: calc(100vh - 70px);
+  background-color: var(--dark-color);
+}
+
+.feautur .feat::after,
+.our-work .feat::after,
+.about-us .feat::after,
+.blog .feat::after {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 2px;
+  bottom: -20px;
+  background-color: var(--green-color);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.feautur .icon-holder {
+  height: 200px;
+}
+.feautur .icon-holder svg {
+  left: 50%;
+  transform: translateX(-50%);
+}
+.feautur .icon-holder .number {
+  font-size: 12rem;
+  color: var(--section-color);
+}
+
+.feautur .icon-holder .icon {
+  color: var(--green-color);
+}
+
+.feautur h4 {
+  color: var(--yellow-color);
+}
+
+.our-work {
+  background-color: var(--section-color);
+}
+.our-work .links ul li {
+  list-style: none;
+  padding: 0.5rem 1rem !important;
+  cursor: pointer;
+}
+
+.links ul .active {
+  background-color: var(--red-color);
+  color: var(--yellow-color);
+}
+
+.our-work .links ul li:not(.active):hover {
+  color: red;
+}
+
+.our-work .box {
+  overflow: hidden;
+  padding: 5px;
+}
+
+.our-work .box::before {
+  content: "Application";
+  position: absolute;
+  background-color: #33d1ccde;
+  width: calc(100% - 10px);
+  height: calc(100% - 10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: var(--section-color);
+  transition: 0.4s;
+  transform: translateX(calc(-100% - 5px));
+}
+.our-work .box:hover::before {
+  transform: translateX(0);
+}
+
+.about-us .aboutText {
+  max-width: 500px;
+}
+.team {
+  background-color: var(--section-color);
+}
+.team h2 {
+  color: var(--yellow-color);
+}
+
+.team .cards h3 {
+  background-color: var(--green-color);
+}
+
+.project {
+  background-color: var(--dark-color);
+}
+
+.subscribe {
+  background-color: var(--yellow-color);
+}
+
+.subscribe input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+  color: white;
+}
+
+.subscribe input::placeholder {
+  color: white;
+  font-weight: 500;
+}
+
+.subscribe button {
+  background-color: var(--dark-color) !important;
+  color: var(--yellow-color) !important;
+}
+
+.footer {
+  background-color: var(--dark-color);
+}
+
+.footer .container .row .foot1 > p span {
+  color: var(--green-color) !important;
+}
+
+.footer div p span {
+  color: var(--yellow-color);
+}
+
+.footer .foot4 .facebook {
+  background-color: #1877f2 !important;
+}
+.footer .foot4 .twitter {
+  background-color: #1da1f2 !important;
+}
+.footer .foot4 .linkedin {
+  background-color: #0a66c2 !important;
+}
+.footer .foot4 .youtube {
+  background-color: #ff0000 !important;
+}
